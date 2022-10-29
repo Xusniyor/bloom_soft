@@ -1,0 +1,190 @@
+// xatoliklar
+{"error":"xotolik turi"}
+
+// savol ping
+{
+  "cmd": "ping"
+}
+// javob ping
+{"devicename":"BLOOM","deviceid":"c4047c40a24"}
+//////////////////////////////////////////////////////////
+// vaqt ornatish
+{
+  "cmd": "settime",
+  "login": "admin",
+  "password": "admin",
+  "time": 1633174351
+}
+// javob
+{"time":1633174351}
+//////////////////////////////////////////////////////////
+// vaqtni olish
+{
+  "cmd": "gettime",
+  "login": "admin",
+  "password": "admin"
+}
+// javob
+{"time":1633174451}
+//////////////////////////////////////////////////////////
+// wifi listini olish
+{
+  "cmd": "getstalist",
+  "login": "admin",
+  "password": "admin"
+}
+// javob
+{
+  "found":3,
+  "network":[
+  {"ssid":"MMV","rssi":-61,"stat":"close"},
+  {"ssid":"ZTE_rKPXK4","rssi":-65,"stat":"close"},
+  {"ssid":"ZTE_jyfgf9","rssi":-70,"stat":"close"}]
+}
+//////////////////////////////////////////////////////////
+// versiyasini korish
+{
+  "cmd": "getversion",
+  "login": "admin",
+  "password": "admin"
+}
+// javob
+{"version":"1.0.0.3"}
+//////////////////////////////////////////////////////////
+// parol tog`riligini tekshirish
+{
+  "cmd": "testuser",
+  "login": "admin",
+  "password": "admin"
+}
+// javob
+{"ok":"user"}
+//////////////////////////////////////////////////////////
+// reboot berish
+{
+  "cmd": "reboot",
+  "login": "admin",
+  "password": "admin"
+}
+// javob
+{"ok":"reboot"}
+//////////////////////////////////////////////////////////
+// prashifkani yangilash
+{
+  "cmd": "updatenow",
+  "login": "admin",
+  "password": "admin"
+}
+// javob
+{"ok":"update now"}
+//////////////////////////////////////////////////////////
+// "connectmode"
+{
+  "cmd": "connectmode",
+  "login": "admin",
+  "password": "admin",
+  "mode": "ap"                 // yoki "sta"
+}
+// jvob
+{"mode":"ap"} // yoki "sta"
+//////////////////////////////////////////////////////////
+// wifi ga ulanish va reboot berish
+{
+  "cmd": "newstaandreboot",
+  "login": "admin",
+  "password": "admin",
+  "ssidsta": "wifi nomi",
+  "passwordsta": "wifi paroli"
+}
+// javob
+{"ssidsta": "wifi nomi","passwordsta": "wifi paroli"}
+//////////////////////////////////////////////////////////
+// ap nomi bilan user login parolini ozgartirish
+{
+  "cmd": "newapanduser",
+  "login": "admin",
+  "password": "admin",
+  "ssidap": "login va nom",
+  "passwordap": "parol"
+}
+// javob
+{"ssidap": "login va nom","passwordap": "parol"}
+//////////////////////////////////////////////////////////
+// budilnik qoshish
+{
+  "cmd": "newalarm",
+  "login": "admin",
+  "password": "admin",
+  "turn": 1,               // yoki 0
+  "mode": 0,               // yoki 1
+  "temp": 7,               // 0 dan 7 gachon
+  "week": "*Y1,D1,S1,C1,P1,J1,W1#",
+  "time": 4684657          // milli secundda
+}
+//////////////////////////////////////////////////////////
+// budilnikni ozgartirish
+{
+  "cmd": "editalarm",
+  "login": "admin",
+  "password": "admin",
+  "index": 0,              // 0 dan 9 gachon
+  "turn": 1,               // yoki 0
+  "mode": 0,               // yoki 1
+  "temp": 7,               // 0 dan 7 gachon
+  "week": "*Y1,D1,S1,C1,P1,J1,W1#",
+  "time": 4684657          // milli secundda
+}
+//////////////////////////////////////////////////////////
+// budilnikni ochirish
+{
+  "cmd": "deletalarm",
+  "login": "admin",
+  "password": "admin",
+  "index": 0              // 0 dan 9 gachon
+}
+//////////////////////////////////////////////////////////
+// budilnikni korish index boyicha
+{
+  "cmd": "getalarm",
+  "login": "admin",
+  "password": "admin",
+  "index": 0              // 0 dan 9 gachon
+}
+//////////////////////////////////////////////////////////
+// budilnikni korish xammasini
+{
+  "cmd": "getalarmall",
+  "login": "admin",
+  "password": "admin"
+}
+//////////////////////////////////////////////////////////
+// vibiratsiyani tekshirish
+{
+  "cmd": "testtemp",
+  "login": "admin",
+  "password": "admin",
+  "temp": 7                  // 0 dan 7 gachon
+}
+//////////////////////////////////////////////////////////
+// chalinayotgan budilnikni ochirish
+{
+  "cmd": "stop",
+  "login": "admin",
+  "password": "admin"
+}
+//////////////////////////////////////////////////////////
+// proshifkani yangilash uchun kalit
+{
+  "cmd": "update",
+  "login": "admin",
+  "password": "admin",
+  "auto": 1,
+  "key": "07e5e493-c3e2-4af2-a15f-2afce5140557"
+}
+//////////////////////////////////////////////////////////
+// ulanish mode ni korish
+{
+  "cmd": "getconnectmode",
+  "login": "admin",
+  "password": "admin"
+}
